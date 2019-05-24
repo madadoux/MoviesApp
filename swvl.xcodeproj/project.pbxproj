@@ -21,6 +21,12 @@
 		581077F32297E569006F9433 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077F22297E569006F9433 /* MovieDetailViewModel.swift */; };
 		581077F522980320006F9433 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 581077F42298031F006F9433 /* movies.json */; };
 		581077F722980B76006F9433 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077F622980B76006F9433 /* MoviesViewController.swift */; };
+		581077FB22982C64006F9433 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077F822982C62006F9433 /* Photo.swift */; };
+		581077FC22982C64006F9433 /* FlickrPhotoSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077F922982C62006F9433 /* FlickrPhotoSearchResponse.swift */; };
+		581077FD22982C64006F9433 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077FA22982C64006F9433 /* Photos.swift */; };
+		581077FF229831E3006F9433 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077FE229831E3006F9433 /* MovieDetailViewController.swift */; };
+		58E0163122987B0F00A572A0 /* MovieDetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0163022987B0F00A572A0 /* MovieDetailCells.swift */; };
+		58E0163322987B6E00A572A0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0163222987B6E00A572A0 /* API.swift */; };
 		7B2CC218047DE93B6FF78455 /* Pods_swvlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7438877907E8A0359F7623A7 /* Pods_swvlUITests.framework */; };
 		9ABAB07BECEB667265F2DCFD /* Pods_swvl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7103B705524BEB94361DBD2F /* Pods_swvl.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +70,12 @@
 		581077F22297E569006F9433 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		581077F42298031F006F9433 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		581077F622980B76006F9433 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		581077F822982C62006F9433 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		581077F922982C62006F9433 /* FlickrPhotoSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhotoSearchResponse.swift; path = ../../../../Posts/codegen_5ce7f43d772a0/FlickrPhotoSearchResponse.swift; sourceTree = "<group>"; };
+		581077FA22982C64006F9433 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		581077FE229831E3006F9433 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		58E0163022987B0F00A572A0 /* MovieDetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCells.swift; sourceTree = "<group>"; };
+		58E0163222987B6E00A572A0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7103B705524BEB94361DBD2F /* Pods_swvl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swvl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7438877907E8A0359F7623A7 /* Pods_swvlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swvlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89549EC2F5722946D5D1FEF6 /* Pods-swvlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swvlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swvlTests/Pods-swvlTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +148,7 @@
 		581077B62297DF16006F9433 /* swvl */ = {
 			isa = PBXGroup;
 			children = (
+				58E0162F22987AE200A572A0 /* Cell */,
 				581077EB2297DF77006F9433 /* API */,
 				581077EA2297DF43006F9433 /* ViewController */,
 				581077E92297DF35006F9433 /* Model */,
@@ -181,6 +194,9 @@
 		581077E92297DF35006F9433 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				581077F922982C62006F9433 /* FlickrPhotoSearchResponse.swift */,
+				581077F822982C62006F9433 /* Photo.swift */,
+				581077FA22982C64006F9433 /* Photos.swift */,
 				581077EC2297E038006F9433 /* MoviesResponse.swift */,
 				581077ED2297E039006F9433 /* Movies.swift */,
 			);
@@ -191,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				581077F622980B76006F9433 /* MoviesViewController.swift */,
+				581077FE229831E3006F9433 /* MovieDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -198,8 +215,17 @@
 		581077EB2297DF77006F9433 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				58E0163222987B6E00A572A0 /* API.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		58E0162F22987AE200A572A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				58E0163022987B0F00A572A0 /* MovieDetailCells.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		B22B8322EAE7AF15B5722A51 /* Pods */ = {
@@ -460,12 +486,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581077FB22982C64006F9433 /* Photo.swift in Sources */,
 				581077B82297DF16006F9433 /* AppDelegate.swift in Sources */,
+				581077FC22982C64006F9433 /* FlickrPhotoSearchResponse.swift in Sources */,
 				581077C02297DF16006F9433 /* swvl.xcdatamodeld in Sources */,
 				581077F32297E569006F9433 /* MovieDetailViewModel.swift in Sources */,
 				581077EF2297E039006F9433 /* Movies.swift in Sources */,
 				581077EE2297E039006F9433 /* MoviesResponse.swift in Sources */,
+				58E0163122987B0F00A572A0 /* MovieDetailCells.swift in Sources */,
+				58E0163322987B6E00A572A0 /* API.swift in Sources */,
 				581077F722980B76006F9433 /* MoviesViewController.swift in Sources */,
+				581077FD22982C64006F9433 /* Photos.swift in Sources */,
+				581077FF229831E3006F9433 /* MovieDetailViewController.swift in Sources */,
 				581077F12297E555006F9433 /* MoviesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,14 +18,15 @@ class MoviesViewController : UIViewController
     let viewModel = MoviesViewModel(jsonName: "movies")
     override func viewDidLoad() {
         moviesTableView.dataSource = self
+        moviesTableView.delegate = self
         viewModel.moviesSorted
             .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe { (map) in
                 self.moviesTableView.reloadData()
                 // print(map)
-        }
-        .disposed(by: dbag)
+            }
+            .disposed(by: dbag)
         searchBar.rx.text
             .asObservable()
             .subscribe(onNext: {query in
@@ -38,7 +39,7 @@ class MoviesViewController : UIViewController
                 
             })
             .disposed(by: dbag)
-
+        
         
         
         
@@ -70,6 +71,7 @@ extension MoviesViewController : UITableViewDataSource  {
         return nil
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let movies = getMoviesInSection(section: indexPath.section) {
             if  let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell")
@@ -92,5 +94,16 @@ extension MoviesViewController : UITableViewDataSource  {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let year = Array(viewModel.moviesSorted.value.keys)[section]
         return String(year)
+    }
+}
+
+extension MoviesViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let movies = getMoviesInSection(section: indexPath.section) {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "movieDetailVc") as! MovieDetailViewController
+            vc.movie = movies[indexPath.row]
+           self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
