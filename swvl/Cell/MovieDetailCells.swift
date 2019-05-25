@@ -41,8 +41,6 @@ class PhotoCell : UICollectionViewCell {
     var model : Photo? {
         didSet{
             guard let farm = model?.farm, let server = model?.server , let id = model?.id , let secret = model?.secret else {return}
-            DataLoader.sharedUrlCache.diskCapacity = 300
-            DataLoader.sharedUrlCache.memoryCapacity = 0
             Manager.shared.loadImage(with: URL(string: "http://farm\(farm).static.flickr.com/\(server)/\(id)_\(secret).jpg")!) { (res) in
                 if let error = res.error {
                     print(error)

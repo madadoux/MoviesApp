@@ -24,7 +24,9 @@ class swvlTests2: XCTestCase {
     func testGetPhotos() {
         let expectation = self.expectation(description: "getPhotos")
         vm.getPhotos()
-        vm.photosSubject.asObservable().subscribe (onNext:{ (photos) in
+        vm.photosSubject
+            .asObservable()
+            .subscribe (onNext:{ (photos) in
             XCTAssert(photos.count > 1 , "no photos returned from api ")
             expectation.fulfill()
         })

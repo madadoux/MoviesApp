@@ -81,14 +81,12 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
             }}
         else {
             
-             if viewModel.photosSubject.value.count > 0{
-            //case photos:
-            
-            return CGSize(width: collectionView.bounds.width/2 - 14, height:collectionView.bounds.width/2 - 14 )
+            if viewModel.photosSubject.value.count > 0{
+                return CGSize(width: collectionView.bounds.width/2 - 14, height:collectionView.bounds.width/2 - 14 )
             }
             else {
                 return CGSize(width: collectionView.bounds.width, height: 60)
-
+                
             }
             
         }
@@ -112,7 +110,6 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
                 
             }}
         else {
-            // case photos:
             return generatePhotosCell(collectionView,indexPath: indexPath)
         }
         

@@ -95,7 +95,7 @@ class MoviesViewModel {
             var movsResults = [Movie]()
             var incIndex = searchIndex
             var decIndex = searchIndex
-            
+            //getting the value "Before" and After this index because the are sorted -> this is working algorithm I have just invented ! xD
             while ( incIndex < movies.value.count && movies.value[incIndex].title!.lowercased().hasPrefix(keyWord)) {
                 movsResults.append(movies.value[incIndex])
                 incIndex = incIndex + 1

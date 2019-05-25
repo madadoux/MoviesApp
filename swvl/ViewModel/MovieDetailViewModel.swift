@@ -12,11 +12,12 @@ import Alamofire
 
 class MovieDetailViewModel {
         var movie : Movie!
+        var photosSubject = Variable<[Photo]>([])
+
         init(movie : Movie) {
             self.movie = movie
         }
         
-    var photosSubject = Variable<[Photo]>([])
         func getPhotos(){
             API().getPhotosOfMovie(title: movie.title!, onSucess: { (photos) in
                 self.photosSubject.value = photos
@@ -24,9 +25,4 @@ class MovieDetailViewModel {
                 print(e)
             }
         }
-        
-        
-        
-        
-        
 }
