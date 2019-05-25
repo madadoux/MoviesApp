@@ -31,7 +31,7 @@ class MoviesViewController : UIViewController
             .asObservable()
             .subscribe(onNext: {query in
                 if let q = query , !q.isEmpty {
-                    self.viewModel.search(keyWord: q)
+                    self.viewModel.searchHasPrefix(keyWord: q.lowercased())
                 }
                 else {
                     self.viewModel.getAllMovies()

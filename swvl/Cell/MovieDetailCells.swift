@@ -21,27 +21,9 @@ class DescriptionCell : UICollectionViewCell {
             if let y = model?.year {
                 year.text = "Year: \(y)"
             }
+            image.image  = UIImage(named : "movieIcon")
+            image.contentMode = .scaleAspectFill
         }
-    }
-}
-class SingleElementCell : UICollectionViewCell {
-    @IBOutlet weak var title: UILabel!
-    var model : String! {
-        didSet {
-            title.text = model
-        }
-    }
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    func setupViews(){
-        backgroundColor = .red
     }
 }
 
@@ -52,7 +34,19 @@ class PhotoCell : UICollectionViewCell {
     var model : Photo? {
         didSet{
             guard let farm = model?.farm, let server = model?.server , let id = model?.id , let secret = model?.secret else {return}
-            Manager.shared.loadImage(with: URL(string: "http://farm\(farm).static.flickr.com/\(server)/\(id)_\(secret).jpg")!, into: image )
+//            Manager.shared.loadImage(with: URL(string: "http://farm\(farm).static.flickr.com/\(server)/\(id)_\(secret).jpg")!, into: image )
+            DataLoader.sharedUrlCache.diskCapacity = 300
+            DataLoader.sharedUrlCache.memoryCapacity = 0
+            Manager.shared.loadImage(with: URL(string: "http://farm\(farm).static.flickr.com/\(server)/\(id)_\(secret).jpg")!) { (res) in
+                if let error = res.error {
+                    print(error)
+                    self.image.image = UIImage(named: "noPreview")
+                    return
+                }
+                self.image.image = res.value
+
+            }
+            
         }
     }
 }

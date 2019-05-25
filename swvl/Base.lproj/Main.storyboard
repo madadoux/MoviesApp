@@ -104,22 +104,22 @@
                                                     <rect key="frame" x="-67" y="-37" width="280" height="168"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wsA-wf-z1i">
-                                                            <rect key="frame" x="0.0" y="1.5" width="100" height="128"/>
+                                                            <rect key="frame" x="0.0" y="1.5" width="150" height="128"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="ZTy-VQ-8un"/>
+                                                                <constraint firstAttribute="width" constant="150" id="ZTy-VQ-8un"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qSy-Qy-eqj">
-                                                            <rect key="frame" x="110" y="37.5" width="253" height="56.5"/>
+                                                            <rect key="frame" x="160" y="37.5" width="203" height="56.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM1-9d-TLx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="33.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="203" height="33.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbA-dB-ihl">
-                                                                    <rect key="frame" x="0.0" y="33.5" width="253" height="23"/>
+                                                                    <rect key="frame" x="0.0" y="33.5" width="203" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>

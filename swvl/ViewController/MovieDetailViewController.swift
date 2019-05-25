@@ -10,98 +10,6 @@ import Foundation
 import UIKit
 import RxSwift
 
-
-class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-    private let cellId = "cell"
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    let appsCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
-        return collectionView
-    }()
-    var elements : [String]?
-    {
-        didSet {
-            appsCollectionView.reloadData()
-        }
-    }
-    func setupViews() {
-        backgroundColor = .white
-        
-        contentView.addSubview(appsCollectionView)
-        
-        appsCollectionView.delegate = self
-        appsCollectionView.dataSource = self
-      //  appsCollectionView.register(UINib.init(nibName: "ElementCell", bundle: nil), forCellWithReuseIdentifier: cellId)
-        appsCollectionView.register(AppCell.self, forCellWithReuseIdentifier: cellId)
-        contentView.addConstraintsWithFormat("H:|-8-[v0]-8-|", views: appsCollectionView)
-        contentView.addConstraintsWithFormat("V:|[v0]|", views: appsCollectionView)
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return elements?.count ?? 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AppCell
-                if let elements = elements {
-                    cell.model = elements[indexPath.row]
-                    
-        }
-        return cell
-
-    return UICollectionViewCell()
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if let elements = elements {
-            return CGSize(width: CGFloat(elements[indexPath.row].count*10),height:collectionView.bounds.height - 5)
-  
-            
-        }
-        return CGSize.zero
-    }
-   
-}
-
-class AppCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    var model :String!{
-        didSet {
-            lbl.text = model
-        }
-    }
-    var lbl :UILabel!
-    func setupViews(){
-        backgroundColor = .gray
-        lbl = UILabel()
-        lbl.font = UIFont.systemFont(ofSize: 17)
-        contentView.addSubview(lbl)
-        contentView.addConstraintsWithFormat("H:|-8-[v0]-8-|", views: lbl)
-        contentView.addConstraintsWithFormat("V:|[v0]|", views: lbl)
-    }
-}
-
 class MovieDetailViewController  : UIViewController{
     
     @IBOutlet weak var collection:UICollectionView!
@@ -127,9 +35,10 @@ class MovieDetailViewController  : UIViewController{
                 print(photos)
             }
             .disposed(by: dbag)
-        collection.register(UINib.init(nibName: "HorizontalScrollCell", bundle: nil) , forCellWithReuseIdentifier: "horizontalCell")
+       
+        collection.register(HorizontalScrollCell.self, forCellWithReuseIdentifier: "horizontalCell")
         
-        collection.register(CategoryCell.self, forCellWithReuseIdentifier: "horizontalCell")
+          collection.register(SingleStringCell.self, forCellWithReuseIdentifier: "singleElement")
 
     }
 }
@@ -170,15 +79,23 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
                 return CGSize(width: collectionView.bounds.width, height: 50)
             }}
         else {
+            
+             if viewModel.photosSubject.value.count > 0{
             //case photos:
+            
             return CGSize(width: collectionView.bounds.width/2 - 10, height:collectionView.bounds.width/2 - 10 )
+            }
+            else {
+                return CGSize(width: collectionView.bounds.width, height: 60)
+
+            }
             
         }
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  elementsBeforePhotos + viewModel.photosSubject.value.count
+        return  elementsBeforePhotos + ((viewModel.photosSubject.value.count > 0) ? viewModel.photosSubject.value.count : 1)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -209,15 +126,25 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
     }
     func generateHorizontalCell(_ collectionView: UICollectionView, indexPath : IndexPath,  elements: [String]?) -> UICollectionViewCell{
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "horizontalCell", for: indexPath) as!CategoryCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "horizontalCell", for: indexPath) as!HorizontalScrollCell
         cell.elements =  elements
         return cell
     }
     
     
     func generatePhotosCell(_ collectionView: UICollectionView, indexPath : IndexPath ) -> UICollectionViewCell{
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCell
+       
+        if ( viewModel.photosSubject.value.count > 0 ) {
+             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCell
         cell.model = self.viewModel.photosSubject.value[indexPath.row-elementsBeforePhotos]
-        return cell
+            return cell
+
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "singleElement", for: indexPath) as! SingleStringCell
+            cell.model = "No images were retured (Flickr Down)"
+            cell.lbl.textAlignment = .center
+            return cell
+        }
     }
 }

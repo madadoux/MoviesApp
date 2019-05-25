@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.754365"
+            timestampString = "580471802.020875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.754678"
+            timestampString = "580471802.020957"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "load()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MoviesViewController.swift"
-            timestampString = "580400963.755308"
+            timestampString = "580471802.021019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -58,45 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.7556109"
+            timestampString = "580471802.021066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "search(keyWord:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "swvl.MoviesViewModel.search(keyWord: Swift.String) -&gt; ()"
-                  moduleName = "swvl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deux/Documents/Work/swvl/swvl/ViewModel/MoviesViewModel.swift"
-                  timestampString = "580393984.302436"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (swvl.Movie) -&gt; Swift.Bool in swvl.MoviesViewModel.search(keyWord: Swift.String) -&gt; ()"
-                  moduleName = "swvl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deux/Documents/Work/swvl/swvl/ViewModel/MoviesViewModel.swift"
-                  timestampString = "580393984.30495"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "129">
-               </Location>
-            </Locations>
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "MoviesViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,39 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.7557991"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "search(keyWord:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.756094"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "search(keyWord:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.756265"
+            timestampString = "580471802.021119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -154,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.756501"
+            timestampString = "580471802.021171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -170,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.75667"
+            timestampString = "580471802.021224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -186,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.756827"
+            timestampString = "580471802.021299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -202,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MoviesViewModel.swift"
-            timestampString = "580400963.756982"
+            timestampString = "580471802.02136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -218,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewModel/MovieDetailViewModel.swift"
-            timestampString = "580427125.8250051"
+            timestampString = "580471802.021445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -234,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MoviesViewController.swift"
-            timestampString = "580400963.757614"
+            timestampString = "580471802.021507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
@@ -250,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580427125.825163"
+            timestampString = "580471802.0215549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "generatePhotosCell(_:indexPath:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/API/API.swift"
-            timestampString = "580427125.8257869"
+            timestampString = "580427596.320359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -282,13 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/HorizontalScrollCell.swift"
-            timestampString = "580426541.006124"
+            timestampString = "580427596.320416"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -298,13 +232,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/HorizontalScrollCell.swift"
-            timestampString = "580426541.0063"
+            timestampString = "580427596.320574"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -314,13 +246,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/HorizontalScrollCell.swift"
-            timestampString = "580426541.006497"
+            timestampString = "580427596.320677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -330,13 +260,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/HorizontalScrollCell.swift"
-            timestampString = "580426541.006624"
+            timestampString = "580427596.320778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "elements"
-            landmarkType = "24">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -346,13 +274,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/HorizontalScrollCell.swift"
-            timestampString = "580426541.0067281"
+            timestampString = "580427596.320874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "init(elements:)"
-            landmarkType = "7">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -362,13 +288,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/HorizontalScrollCell.swift"
-            timestampString = "580426541.0068099"
+            timestampString = "580427596.320967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "vc"
-            landmarkType = "24">
+            startingLineNumber = "75"
+            endingLineNumber = "75">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -378,11 +302,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580427125.82604"
+            timestampString = "580471802.022171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "generateHorizontalCell(_:indexPath:elements:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -393,14 +317,251 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580427125.826351"
+            filePath = "swvlTests/swvlTests.swift"
+            timestampString = "580471802.022444"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "testContainsSearching()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testContainsSearching() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467222.249651"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Bool in closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testContainsSearching() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467222.2536809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () -&gt; Swift.String in closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testContainsSearching() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467222.258106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swvlTests/swvlTests.swift"
+            timestampString = "580471802.022506"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "testLoadingMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testLoadingMovies() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467394.473963"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Bool in closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testLoadingMovies() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467394.477028"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () -&gt; Swift.String in closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testLoadingMovies() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467394.480103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swvlTests/swvlTests.swift"
+            timestampString = "580471802.022555"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "testLoadingMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testLoadingMovies() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467398.515394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Bool in closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testLoadingMovies() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467398.519273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () -&gt; Swift.String in closure #1 (Swift.Array&lt;swvl.Movie&gt;) -&gt; () in swvlTests.swvlTests.testLoadingMovies() -&gt; ()"
+                  moduleName = "swvlTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvlTests/swvlTests.swift"
+                  timestampString = "580467398.522251"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swvl/Cell/MovieDetailCells.swift"
+            timestampString = "580471802.0226229"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "model"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swvl/Cell/MovieDetailCells.swift"
+            timestampString = "580471802.022691"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "model"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swvl.PhotoCell.model.didset : Swift.Optional&lt;swvl.Photo&gt;"
+                  moduleName = "swvl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvl/Cell/MovieDetailCells.swift"
+                  timestampString = "580471450.2396359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "2361">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Nuke.Result&lt;__ObjC.UIImage&gt;) -&gt; () in swvl.PhotoCell.model.didset : Swift.Optional&lt;swvl.Photo&gt;"
+                  moduleName = "swvl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/deux/Documents/Work/swvl/swvl/Cell/MovieDetailCells.swift"
+                  timestampString = "580471450.24336"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,12 +571,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580427125.826617"
+            timestampString = "580471802.022743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
