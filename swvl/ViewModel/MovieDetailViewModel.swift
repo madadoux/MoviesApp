@@ -16,7 +16,7 @@ class MovieDetailViewModel {
             self.movie = movie
         }
         
-        var photosSubject = Variable<[Photo]>([])
+    var photosSubject = Variable<[Photo]>([])
         func getPhotos(){
             API().getPhotosOfMovie(title: movie.title!, onSucess: { (photos) in
                 self.photosSubject.value = photos

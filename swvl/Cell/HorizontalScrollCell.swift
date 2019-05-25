@@ -12,7 +12,7 @@ import UIKit
 class HorizontalScrollCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     private let cellId = "cell"
-    
+    var label :UILabel!
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -35,6 +35,11 @@ class HorizontalScrollCell: UICollectionViewCell, UICollectionViewDataSource, UI
             appsCollectionView.reloadData()
         }
     }
+    var title : String!{
+        didSet {
+            label.text = title
+        }
+    }
     func setupViews() {
         backgroundColor = .white
         
@@ -42,10 +47,13 @@ class HorizontalScrollCell: UICollectionViewCell, UICollectionViewDataSource, UI
         
         appsCollectionView.delegate = self
         appsCollectionView.dataSource = self
-        //  appsCollectionView.register(UINib.init(nibName: "ElementCell", bundle: nil), forCellWithReuseIdentifier: cellId)
         appsCollectionView.register(SingleStringCell.self, forCellWithReuseIdentifier: cellId)
-        contentView.addConstraintsWithFormat("H:|-8-[v0]-8-|", views: appsCollectionView)
+        self.label = UILabel()
+        label.text = "Hello"
+        contentView.addSubview(label)
+        contentView.addConstraintsWithFormat("H:|-0-[v0(60)]-5-[v1]-0-|", views: label ,appsCollectionView)
         contentView.addConstraintsWithFormat("V:|[v0]|", views: appsCollectionView)
+          contentView.addConstraintsWithFormat("V:|-10-[v0]-10-|", views: label)
         
     }
     

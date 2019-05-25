@@ -25,8 +25,9 @@ class SingleStringCell: UICollectionViewCell {
     }
     var lbl :UILabel!
     func setupViews(){
-        backgroundColor = .lightGray
+        backgroundColor = UIColor.brown
         lbl = UILabel()
+        lbl.textColor = .white
         lbl.font = UIFont.systemFont(ofSize: 17)
         contentView.addSubview(lbl)
         contentView.addConstraintsWithFormat("H:|-8-[v0]-8-|", views: lbl)

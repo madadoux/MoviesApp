@@ -17,7 +17,7 @@ class MovieDetailViewController  : UIViewController{
     var viewModel : MovieDetailViewModel!
     var movie :Movie!
     let elementsBeforePhotos = 3
-    
+    var loading = true
     override func awakeFromNib() {
         
     }
@@ -30,8 +30,10 @@ class MovieDetailViewController  : UIViewController{
         
         viewModel.photosSubject
             .asObservable()
+            .skip(1)
             .subscribe { (photos) in
                 self.collection.reloadData()
+                self.loading = false
                 print(photos)
             }
             .disposed(by: dbag)
@@ -39,15 +41,12 @@ class MovieDetailViewController  : UIViewController{
         collection.register(HorizontalScrollCell.self, forCellWithReuseIdentifier: "horizontalCell")
         
           collection.register(SingleStringCell.self, forCellWithReuseIdentifier: "singleElement")
-
+        collection.insetsLayoutMarginsFromSafeArea = true
+        
     }
 }
 
 
-extension MovieDetailViewController : UICollectionViewDelegate   {
-    
-    
-}
 extension UIView {
     func addConstraintsWithFormat(_ format: String, views: UIView...) {
         var viewsDictionary = [String: UIView]()
@@ -66,12 +65,14 @@ enum CellIndex : Int {
 }
 extension MovieDetailViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 0, left:4, bottom: 0, right: 4)
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if  let cellIndex = CellIndex.init(rawValue: indexPath.row) {
             switch cellIndex {
             case .description:
-                return CGSize(width: collectionView.bounds.width, height: 100)
+                return CGSize(width: collectionView.bounds.width, height: 200)
             case .genere:
                 return CGSize(width: collectionView.bounds.width, height: 50)
                 
@@ -83,7 +84,7 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
              if viewModel.photosSubject.value.count > 0{
             //case photos:
             
-            return CGSize(width: collectionView.bounds.width/2 - 10, height:collectionView.bounds.width/2 - 10 )
+            return CGSize(width: collectionView.bounds.width/2 - 14, height:collectionView.bounds.width/2 - 14 )
             }
             else {
                 return CGSize(width: collectionView.bounds.width, height: 60)
@@ -104,10 +105,10 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
             case .description:
                 return generateDescriptionCell(collectionView, indexPath: indexPath)
             case .genere:
-                return generateHorizontalCell(collectionView, indexPath: indexPath, elements: movie.genres)
+                return generateHorizontalCell(collectionView, indexPath: indexPath, elements: movie.genres,title: "Genre:")
                 
             case .cast:
-                return generateHorizontalCell(collectionView, indexPath: indexPath, elements: movie.cast)
+                return generateHorizontalCell(collectionView, indexPath: indexPath, elements: movie.cast,title: "Cast:")
                 
             }}
         else {
@@ -124,10 +125,11 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
         
         return cell
     }
-    func generateHorizontalCell(_ collectionView: UICollectionView, indexPath : IndexPath,  elements: [String]?) -> UICollectionViewCell{
+    func generateHorizontalCell(_ collectionView: UICollectionView, indexPath : IndexPath,  elements: [String]?, title : String) -> UICollectionViewCell{
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "horizontalCell", for: indexPath) as!HorizontalScrollCell
         cell.elements =  elements
+        cell.title = title
         return cell
     }
     
@@ -142,7 +144,7 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
         }
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "singleElement", for: indexPath) as! SingleStringCell
-            cell.model = "No images were retured (Flickr Down)"
+            cell.model = (loading) ? "Loading ..." : "No images were retured (Flickr Down)"
             cell.lbl.textAlignment = .center
             return cell
         }

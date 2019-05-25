@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 import Nuke
-
+import HCSStarRatingView
 class DescriptionCell : UICollectionViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var image :UIImageView!
-    
+    @IBOutlet weak var rating : HCSStarRatingView!
     var model : Movie? {
         didSet {
             title.text = model?.title
@@ -22,7 +22,8 @@ class DescriptionCell : UICollectionViewCell {
                 year.text = "Year: \(y)"
             }
             image.image  = UIImage(named : "movieIcon")
-            image.contentMode = .scaleAspectFill
+            image.contentMode = .scaleToFill
+            rating.value = CGFloat( model?.rating ?? 0)
         }
     }
 }

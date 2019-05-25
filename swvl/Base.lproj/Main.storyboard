@@ -109,21 +109,36 @@
                                                                 <constraint firstAttribute="width" constant="150" id="ZTy-VQ-8un"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qSy-Qy-eqj">
-                                                            <rect key="frame" x="160" y="37.5" width="203" height="56.5"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qSy-Qy-eqj">
+                                                            <rect key="frame" x="160" y="0.0" width="203" height="131"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM1-9d-TLx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="203" height="33.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM1-9d-TLx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="203" height="43.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbA-dB-ihl">
-                                                                    <rect key="frame" x="0.0" y="33.5" width="203" height="23"/>
+                                                                    <rect key="frame" x="0.0" y="43.5" width="203" height="44"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-SH-5dD" customClass="HCSStarRatingView">
+                                                                    <rect key="frame" x="0.0" y="87.5" width="203" height="43.5"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                                            <real key="value" value="0.0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                                            <real key="value" value="4"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
@@ -139,6 +154,7 @@
                                         <size key="customSize" width="363" height="131"/>
                                         <connections>
                                             <outlet property="image" destination="wsA-wf-z1i" id="82X-fC-iga"/>
+                                            <outlet property="rating" destination="NSO-SH-5dD" id="GQZ-sk-KDs"/>
                                             <outlet property="title" destination="ZM1-9d-TLx" id="ZYT-Li-lX9"/>
                                             <outlet property="year" destination="TbA-dB-ihl" id="OtX-J3-o9e"/>
                                         </connections>
