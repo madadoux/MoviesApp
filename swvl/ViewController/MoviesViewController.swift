@@ -17,6 +17,12 @@ class MoviesViewController : UIViewController
     @IBOutlet weak var searchBar : UISearchBar!
     let viewModel = MoviesViewModel(jsonName: "movies")
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.barTintColor = .brown
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+
+title = "Movies"
         moviesTableView.dataSource = self
         moviesTableView.delegate = self
         viewModel.moviesSorted

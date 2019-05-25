@@ -13,7 +13,7 @@ target 'swvl' do
     pod 'HCSStarRatingView', '~> 1.5'
 
 pod 'ObjectMapper', '~> 3.1.0'
-
+pod 'RealmSwift', '~>3.3.2'
   target 'swvlTests' do
     inherit! :search_paths
     pod 'RxBlocking','~> 4.1.2'

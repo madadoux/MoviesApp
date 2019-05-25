@@ -32,5 +32,6 @@ class SingleStringCell: UICollectionViewCell {
         contentView.addSubview(lbl)
         contentView.addConstraintsWithFormat("H:|-8-[v0]-8-|", views: lbl)
         contentView.addConstraintsWithFormat("V:|[v0]|", views: lbl)
+        self.makeRoundedWith( 20)
     }
 }

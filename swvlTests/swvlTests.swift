@@ -10,6 +10,8 @@ import XCTest
 @testable import swvl
 import RxSwift
 import ObjectMapper
+import RealmSwift
+
 class swvlTests2: XCTestCase {
     let dbag = DisposeBag()
 
@@ -31,6 +33,7 @@ class swvlTests2: XCTestCase {
         waitForExpectations(timeout: 3.0, handler: nil)
 
     }
+ 
 }
 class swvlTests: XCTestCase {
     let vm = MoviesViewModel(jsonName: "movies")

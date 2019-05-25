@@ -110,22 +110,22 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qSy-Qy-eqj">
-                                                            <rect key="frame" x="160" y="0.0" width="203" height="131"/>
+                                                            <rect key="frame" x="160" y="14.5" width="363" height="102"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM1-9d-TLx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="203" height="43.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="29"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbA-dB-ihl">
-                                                                    <rect key="frame" x="0.0" y="43.5" width="203" height="44"/>
+                                                                    <rect key="frame" x="0.0" y="29" width="363" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-SH-5dD" customClass="HCSStarRatingView">
-                                                                    <rect key="frame" x="0.0" y="87.5" width="203" height="43.5"/>
+                                                                    <rect key="frame" x="0.0" y="52" width="363" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">

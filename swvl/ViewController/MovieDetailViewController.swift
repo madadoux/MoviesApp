@@ -146,6 +146,8 @@ extension MovieDetailViewController : UICollectionViewDataSource , UICollectionV
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "singleElement", for: indexPath) as! SingleStringCell
             cell.model = (loading) ? "Loading ..." : "No images were retured (Flickr Down)"
             cell.lbl.textAlignment = .center
+            cell.makeRoundedWith(7)
+
             return cell
         }
     }

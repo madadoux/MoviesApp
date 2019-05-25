@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MoviesViewController.swift"
-            timestampString = "580473746.148613"
+            timestampString = "580480076.734804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -63,8 +63,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "85"
             endingLineNumber = "85"
-            landmarkName = "MoviesViewModel"
-            landmarkType = "3">
+            landmarkName = "search(keyWord:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MoviesViewController.swift"
-            timestampString = "580473746.149226"
+            timestampString = "580480076.735007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580475748.9650919"
+            timestampString = "580480076.735074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/API/API.swift"
-            timestampString = "580427596.320359"
+            timestampString = "580480076.735135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580475748.965206"
+            timestampString = "580480076.735188"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvlTests/swvlTests.swift"
-            timestampString = "580473746.15117"
+            timestampString = "580480076.735242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "testContainsSearching()"
             landmarkType = "7">
             <Locations>
@@ -297,11 +297,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvlTests/swvlTests.swift"
-            timestampString = "580473746.1512229"
+            timestampString = "580480076.735719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "testLoadingMovies()"
             landmarkType = "7">
             <Locations>
@@ -360,11 +360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvlTests/swvlTests.swift"
-            timestampString = "580473746.151273"
+            timestampString = "580480076.735992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "testLoadingMovies()"
             landmarkType = "7">
             <Locations>
@@ -423,11 +423,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/MovieDetailCells.swift"
-            timestampString = "580475748.965296"
+            timestampString = "580480076.736255"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "model"
             landmarkType = "24">
          </BreakpointContent>
@@ -439,11 +439,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/Cell/MovieDetailCells.swift"
-            timestampString = "580475748.9653471"
+            timestampString = "580480076.736321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "model"
             landmarkType = "24">
             <Locations>
@@ -487,7 +487,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580475748.9653879"
+            timestampString = "580480076.7363811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
@@ -503,7 +503,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swvl/ViewController/MovieDetailViewController.swift"
-            timestampString = "580475748.965427"
+            timestampString = "580480076.736506"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"

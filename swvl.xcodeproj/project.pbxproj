@@ -25,6 +25,7 @@
 		581077FC22982C64006F9433 /* FlickrPhotoSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077F922982C62006F9433 /* FlickrPhotoSearchResponse.swift */; };
 		581077FD22982C64006F9433 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077FA22982C64006F9433 /* Photos.swift */; };
 		581077FF229831E3006F9433 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581077FE229831E3006F9433 /* MovieDetailViewController.swift */; };
+		58131C2322995D0C003B547B /* UIView+rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58131C2222995D0C003B547B /* UIView+rounding.swift */; };
 		58E0163122987B0F00A572A0 /* MovieDetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0163022987B0F00A572A0 /* MovieDetailCells.swift */; };
 		58E0163322987B6E00A572A0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0163222987B6E00A572A0 /* API.swift */; };
 		58E0163D22989E2E00A572A0 /* SingleStringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0163C22989E2E00A572A0 /* SingleStringCell.swift */; };
@@ -76,6 +77,7 @@
 		581077F922982C62006F9433 /* FlickrPhotoSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhotoSearchResponse.swift; path = ../../../../Posts/codegen_5ce7f43d772a0/FlickrPhotoSearchResponse.swift; sourceTree = "<group>"; };
 		581077FA22982C64006F9433 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		581077FE229831E3006F9433 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		58131C2222995D0C003B547B /* UIView+rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+rounding.swift"; sourceTree = "<group>"; };
 		58E0163022987B0F00A572A0 /* MovieDetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCells.swift; sourceTree = "<group>"; };
 		58E0163222987B6E00A572A0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		58E0163C22989E2E00A572A0 /* SingleStringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStringCell.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		581077B62297DF16006F9433 /* swvl */ = {
 			isa = PBXGroup;
 			children = (
+				58131C2122995CE3003B547B /* extentions */,
 				58E0162F22987AE200A572A0 /* Cell */,
 				581077EB2297DF77006F9433 /* API */,
 				581077EA2297DF43006F9433 /* ViewController */,
@@ -222,6 +225,14 @@
 				58E0163222987B6E00A572A0 /* API.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		58131C2122995CE3003B547B /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				58131C2222995D0C003B547B /* UIView+rounding.swift */,
+			);
+			path = extentions;
 			sourceTree = "<group>";
 		};
 		58E0162F22987AE200A572A0 /* Cell */ = {
@@ -448,6 +459,8 @@
 				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -457,6 +470,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -504,6 +519,7 @@
 				581077EE2297E039006F9433 /* MoviesResponse.swift in Sources */,
 				58E0163122987B0F00A572A0 /* MovieDetailCells.swift in Sources */,
 				58E0163322987B6E00A572A0 /* API.swift in Sources */,
+				58131C2322995D0C003B547B /* UIView+rounding.swift in Sources */,
 				581077F722980B76006F9433 /* MoviesViewController.swift in Sources */,
 				58E0163D22989E2E00A572A0 /* SingleStringCell.swift in Sources */,
 				581077FD22982C64006F9433 /* Photos.swift in Sources */,

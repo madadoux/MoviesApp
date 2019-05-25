@@ -25,9 +25,15 @@ class API {
                 let res = response.result.value as! [String:Any]
                 if let resObject = FlickrPhotoSearchResponse(JSON:res )  , let photos = resObject.photos?.photo {
                     onSucess(photos)
+                    return
                 }
                 
+                onError("can't parse the response")
+
         }
         
     }
 }
+
+
+
